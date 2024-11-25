@@ -13,6 +13,7 @@
 - [Mandatory Tasks](#Mandatory-Tasks)
 - [Specifiers](#Specifiers)
 - [Installation](#Installation)
+- [Exemples and Tests](#Exemples-and-tests)
 - [Authors](#Authors)
 
 ## Project Overview
