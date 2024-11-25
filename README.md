@@ -16,11 +16,11 @@
 - [Installation](#Installation)
 - [Authors](#Authors)
 
-## Project Overview :
+## Project Overview
 
 This project recreate the printf function, a standard library function in the C programming language. The printf function allows you to display formatted text onto the user interface.
 
-## Requirements :
+## Requirements
 
 **1. Allowed Editors :** You can use 'Vi', 'Vim' or 'Emacs'.
 
@@ -46,16 +46,16 @@ This project recreate the printf function, a standard library function in the C 
 - va_copy (man 3 va_copy)
 - va_arg (man 3 va_arg) 
 
-## Man Page :
+## Man Page
 
 The man page is a file wich explains in detail how the function works. If you want see a full explanation of this function you can run our man page this way:
 ```
 $ man ./man_3_printf
 ```
 
-## Flowchart :
+## Flowchart
 
-## Usage :
+## Usage
 
 - To call the '_printf()' function, the next code is required :
 ```
@@ -68,7 +68,7 @@ int main()
 }
 ```
 
-## Compilation :
+## Compilation
 
 To compile the program, this command has to be executed :
 ```bash
@@ -119,7 +119,7 @@ Cohort: 25
 -   %d: prints a decimal number 
 -	%i: signed integer number
 
-## Installation :
+## Installation
 
 1. Clone this repository on your local machine :
 
@@ -133,6 +133,6 @@ git clone https://github.com/valak74200/holbertonschool-printf.git
 gcc -Wall -Werror -Wextra -pedantic -std=gnu89 -Wno-format *.c -o 0-printf
 ```
 
-## Authors :
+## Authors
 
 LOUVEAU Clément <a href="https://github.com/valak74200" rel="nofollow"><img align="center" alt="github" src="https://www.vectorlogo.zone/logos/github/github-tile.svg" height="24" /></a>
