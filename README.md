@@ -1,7 +1,11 @@
 <img src="https://github.com/valak74200/holbertonschool-printf/blob/main/holberton-logo_2.png">
 
-# Create a printf function
+<div alig="center">
 
+    #Create a printf function
+
+<\div>
+    
 ## Table of Contents :
 
 - [Project Overview](#Project-Overview)
