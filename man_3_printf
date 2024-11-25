@@ -1,0 +1,86 @@
+.TH _printf 3 "November 25, 2024" "Version 1.0" "User Commands"
+
+.SH NAME
+\fB_printf\fR \- Copy the standard printf function and writes formatted date to the standard output.
+
+.SH SYNOPSIS
+.P
+\fBint _printf(const char *format, ...);\fR
+
+.P
+\fB#include "main.h"\fR
+
+.SH DESCRIPTION
+The \fB_printf\fR function copy the behavior of the standard \fBprintf\fR function and is designed to print formatted output to the standard output stream.
+The function scans the string and writes each character to the standard output. When faced with a conversion specifier, the function will call other functions via a va_list, which will convert and write the following characters according to the functions invoked.
+
+.SH CONVERSION SPECIFIERS
+
+.TP 10
+\fB%c:\fR 
+Prints a single character.
+
+.TP 10
+\fB%s:\fR 
+Prints a null-terminated string of characters.
+
+.TP 10
+\fB%%:\fR 
+Prints a single percent sign.
+
+.TP 10
+\fB%d:\fR 
+Prints a decimal number.
+
+.TP 10
+\fB%i:\fR 
+Prints an integer number.
+
+.PP
+\fBFlags, Field Width, Precision, Length Modifier:\fR
+This simplified version of \fB_printf\fR does not support flags, field width, precision, or length modifiers.
+
+.SH RETURN VALUE
+The function returns the number of characters printed (excluding the null byte used to end the output to strings).
+If format is NULL or ends with a %, the function returns -1.
+
+.SH EXAMPLES
+The following examples illustrates the use of the _printf function:
+
+    \fBlen = _printf("\Let's try to printf a simple sentence.\n");\fR
+    \fBOutput : "Let's try to printf a simple sentence."\fR
+
+    \fB_printf("Length:[%d, %i]\\n", len, len);\fR
+    \fBOutput: "Length:[39, 39]".\fR
+
+    \fB_printf("Negative:[%d]\\n", -762534);\fR
+    \fBOutput: "Negative:[-762534]".\fR
+
+    \fB_printf("Character:[%c]\\n", 'H');\fR
+    \fB"Output: "Character:[H]".\fR
+
+    \fB_printf("String:[%s]\\n", "I am a string !");\fR
+    \fBOutput: "I am a string !".\fR
+
+    \fBlen = _printf("Percent:[%%]\\n");\fR
+    \fBOutput: "Percent:[%]".\fR
+
+    \fB_printf("Len:[%d]\\n", len);\fR
+    \fB"Output: "Len:[12]".\fR
+
+    \fB_printf("Unknown:[%r]\\n");\fR
+    \fBOutput: "Unknown:[%r]".\fR
+
+.SH AUTHORS
+.P
+Written by \fBLOUVEAU Clement\fP and \fBMina \fP.
+
+.SH COPYRIGHT
+.P
+Copyright (C) 2024, LOUVEAU Clement.
+This is a free software: feel free to change and redistribute it.
+NO WARRANTY, to the extent permitted by law.
+
+.SH DATE
+November 25, 2024
+SH COPYRIGHT
