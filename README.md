@@ -113,11 +113,11 @@ Cohort: 25
 
 \_printf supports the following format specifiers :
 
--   %c: prints a single character
--   %s: prints a string of characters
--	%%: prints a literal '%' character
--   %d: prints a decimal number 
--	%i: signed integer number
+-   %c : prints a single character
+-   %s : prints a string of characters
+-	%% : prints a literal '%' character
+-   %d : prints a decimal number 
+-	%i : signed integer number
 
 ## Installation
 
