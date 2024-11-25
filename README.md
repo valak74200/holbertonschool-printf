@@ -5,13 +5,13 @@
 
 ## Table of Contents :
 
-- [Project Overview](#Project-overview)
+- [Project Overview](#Project-Overview)
 - [Requirements](#Requirements)
-- [Man Page](#Man-page)
+- [Man Page](#Man-Page)
 - [Flowchart](#Flowchart)
 - [Usage](#Usage)
 - [Compilation](#Compilation)
-- [Mandatory Tasks](#Mandatory-tasks)
+- [Mandatory Tasks](#Mandatory-Tasks)
 - [Specifiers](#Specifiers)
 - [Installation](#Installation)
 - [Authors](#Authors)
