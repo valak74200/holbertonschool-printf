@@ -14,7 +14,7 @@ int (*specifiers(const char *format))(va_list)
  * La fonction retourne un pointeur vers une fonction
  * qui prend un va_list comme argument et retourne un int.
  */
-	int i = 0;
+	int i;
 
 /**
  * Une variable i est déclarée et initialisée à 0.
