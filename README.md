@@ -230,3 +230,4 @@ Unknown:[%r]
 ## Authors
 
 LOUVEAU Clément <a href="https://github.com/valak74200" rel="nofollow"><img align="center" alt="github" src="https://www.vectorlogo.zone/logos/github/github-tile.svg" height="24" /></a>
+SINANI Mina <a href="https://github.com/MINS2405" rel="nofollow"><img align="center" alt="github" src="https://www.vectorlogo.zone/logos/github/github-tile.svg" height="24" /></a>
