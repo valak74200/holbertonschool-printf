@@ -76,7 +76,7 @@ $ gcc -Wall -Werror -Wextra -pedantic -std=gnu89 -Wno-format *.c
 ```
 This will create a compilation file. You can run this file in your terminal by using this command :
 ```bash
-$ ./
+$ ./a.out
 ```
 
 Here's an example of how does the parameters work in our `_printf()` function:
