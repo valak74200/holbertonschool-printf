@@ -5,7 +5,8 @@
  * @format: input the format
  * Return: printed chars
  */
-int _printf(const char *format, ...) {
+int _printf(const char *format, ...) 
+{
 	int count = 0, value = 0, i = 0;
 	int (*f)(va_list);
 	va_list args;
@@ -31,7 +32,8 @@ int _printf(const char *format, ...) {
 			value = write(1, &format[i], 1);
 			count = count + value;
 			i = i + 1;
-			continue; } }
+			continue; } 
+	}
 	va_end(args);
 	return (count); 
 }
