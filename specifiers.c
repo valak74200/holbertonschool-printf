@@ -8,22 +8,22 @@
 
 int (*specifiers(const char *format))(va_list)
 {
-int i = 0;
-print_t array[] = {
-{'c', print_char},
-{'s', print_string},
-{'d', print_int},
-{'i', print_int},
-{'%', print_percent},
-{'b', print_binary},
-{'\0', NULL}
-};
-for (int i = 0; array[i].sp != NULL; i++)
-{
-if (array[i].sp == *format)
-{
-return (array[i].f);
-}
-}
-return (NULL);
+	int i = 0;
+	print_t array[] = {
+		{'c', print_char},
+		{'s', print_string},
+		{'d', print_int},
+		{'i', print_int},
+		{'%', print_percent},
+		{'b', print_binary},
+		{'\0', NULL}
+	};
+	for (int i = 0; array[i].sp != NULL; i++)
+	{
+		if (array[i].sp == *format)
+		{
+			return (array[i].f);
+		}
+	}
+	return (NULL);
 }

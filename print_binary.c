@@ -13,7 +13,7 @@ int print_binary(va_list args)
  */
 
 {
-	unsigned int n = va_args(args, unsigned int);
+	unsigned int n = va_arg(args, unsigned int);
 	char binary[32];
 	int i = 0, count = 0, j = 0;
 
