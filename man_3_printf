@@ -1,86 +1,87 @@
-.TH _printf 3 "November 25, 2024" "Version 1.0" "User Commands"
-
+ ./" This is _printf manpage
+.TH man 3 "26-11-2024" "1.0" "_printf man page"
 .SH NAME
-\fB_printf\fR \- Copy the standard printf function and writes formatted date to the standard output.
-
+.B _printf
+- format and data.
 .SH SYNOPSIS
-.P
-\fBint _printf(const char *format, ...);\fR
-
-.P
-\fB#include "main.h"\fR
-
+_printf FORMAT [ARGUMENT]...
 .SH DESCRIPTION
-The \fB_printf\fR function copy the behavior of the standard \fBprintf\fR function and is designed to print formatted output to the standard output stream.
-The function scans the string and writes each character to the standard output. When faced with a conversion specifier, the function will call other functions via a va_list, which will convert and write the following characters according to the functions invoked.
+Print ARGUMENT(s) according to FORMAT:
 
-.SH CONVERSION SPECIFIERS
+\\"     double quote.
 
-.TP 10
-\fB%c:\fR 
-Prints a single character.
+\\\\     backslash.
 
-.TP 10
-\fB%s:\fR 
-Prints a null-terminated string of characters.
+\\n     new line.
 
-.TP 10
-\fB%%:\fR 
-Prints a single percent sign.
+\\r     carriage return.
 
-.TP 10
-\fB%d:\fR 
-Prints a decimal number.
+\\t     horizontal tab.
 
-.TP 10
-\fB%i:\fR 
-Prints an integer number.
+%%     a single %.
 
-.PP
-\fBFlags, Field Width, Precision, Length Modifier:\fR
-This simplified version of \fB_printf\fR does not support flags, field width, precision, or length modifiers.
+.SH CONVERSION CHARACTERS
+.B The conversion specifiers and their meanings are:
+.IP -b
+The unsigned int argument is converted to binary.
 
-.SH RETURN VALUE
-The function returns the number of characters printed (excluding the null byte used to end the output to strings).
-If format is NULL or ends with a %, the function returns -1.
+.IP -d,i
+The int argument is converted to signed decimal notation.
+
+.IP -c
+The int argument is converted to an unsigned char, and the resulting character is written.
+
+
+.IP -o,u,x,X
+The unsigned int argument is converted to ( ) notation:
+
+unsigned octal: (o).
+
+unsigned decimal: (u).
+
+unsigned hexadecimal: (x and X).
+
+unsigned hexadecimal: (x and X).
+
+.IP -s
+Characters from the array are written up to (but not including) a terminating null byte ('\0').
+
+.IP -S
+Characters from the array are written up to (but not including) a terminating null byte ('\0').
+
+Not include characters (0 < ASCII value < 32 or >= 127), are printed \x, , followed by the ASCII code value in hexadecimal (upper case - always 2 characters).
+
+.IP -p
+The void * pointer argument is printed in hexadecimal (as if by %#x or %#lx).
 
 .SH EXAMPLES
-The following examples illustrates the use of the _printf function:
 
-    \fBlen = _printf("\Let's try to printf a simple sentence.\n");\fR
-    \fBOutput : "Let's try to printf a simple sentence."\fR
+.IP -print a string.
+_printf("This is a string");  // Output This is a string
+_printf("String:[%s]\n", "I am a string!"); // Output: String:[I am a string!].
 
-    \fB_printf("Length:[%d, %i]\\n", len, len);\fR
-    \fBOutput: "Length:[39, 39]".\fR
+.IP print char.
+_printf("Character:[%c]\n", 'H'); // Output: Character:[H].
 
-    \fB_printf("Negative:[%d]\\n", -762534);\fR
-    \fBOutput: "Negative:[-762534]".\fR
+.IP -print integer.
+_printf("Length:[%d, %i]\n", 23, 39); // Output: Length:[23, 39].
+_printf("Negative:[%d]\n", -762534); // Output: Negative:[-762534].
 
-    \fB_printf("Character:[%c]\\n", 'H');\fR
-    \fB"Output: "Character:[H]".\fR
+.SH SEE ALSO
 
-    \fB_printf("String:[%s]\\n", "I am a string !");\fR
-    \fBOutput: "I am a string !".\fR
+.I printf(1), printf(3).
 
-    \fBlen = _printf("Percent:[%%]\\n");\fR
-    \fBOutput: "Percent:[%]".\fR
+.SH BUGS
 
-    \fB_printf("Len:[%d]\\n", len);\fR
-    \fB"Output: "Len:[12]".\fR
+No known bugs.
 
-    \fB_printf("Unknown:[%r]\\n");\fR
-    \fBOutput: "Unknown:[%r]".\fR
+.SH AUTHOR
 
-.SH AUTHORS
-.P
-Written by \fBLOUVEAU Clement\fP and \fBMina \fP.
+LOUVEAU Clement
 
 .SH COPYRIGHT
-.P
-Copyright (C) 2024, LOUVEAU Clement.
-This is a free software: feel free to change and redistribute it.
-NO WARRANTY, to the extent permitted by law.
 
-.SH DATE
-November 25, 2024
-SH COPYRIGHT
+Copyright © 2024 Holberton School B.
+
+
+Copyright © 1999-2024 SS64.com.
