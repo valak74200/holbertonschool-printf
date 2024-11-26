@@ -20,7 +20,7 @@ int (*specifiers(const char *format))(va_list)
  * Une variable i est déclarée et initialisée à 0.
  * Cette variable sera utilisée comme index pour l'itération.
  */
-	print_t array[7] = {
+static const print_t array[] = {
 		{'c', print_char},
 		{'s', print_string},
 		{'d', print_int},
