@@ -2,8 +2,8 @@
 
 /**
  * specifiers - print an argument
- * @format : Format character specifying the type of argument to print
- * Return : Pointer to the appropriate function or NULL if not found
+ * @format: Format character specifying the type of argument to print
+ * Return: Pointer to the appropriate function or NULL if not found
  */
 int (*specifiers(const char *format))(va_list)
 {
