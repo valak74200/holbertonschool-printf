@@ -17,7 +17,7 @@
  */
 typedef struct print
 {
-	char *sp;
+	char sp;
 	int (*f)(va_list);
 } print_t;
 
