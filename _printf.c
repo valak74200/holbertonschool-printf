@@ -99,3 +99,4 @@ int _printf(const char *format, ...)
 /**
  * Termine le traitement des arguments variables, 
  * et retourne le nombre total de caractères imprimés.
+*/
