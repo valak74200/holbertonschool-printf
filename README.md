@@ -13,9 +13,9 @@
 - [Mandatory Tasks](#Mandatory-Tasks)
 - [Specifiers](#Specifiers)
 - [Installation](#Installation)
+- [File description](#File-description)
 - [Examples and Tests](#Examples-and-Tests)
 - [Authors](#Authors)
-- [File description](#File-description)
 
 ## Project Overview
 
