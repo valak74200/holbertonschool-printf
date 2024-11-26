@@ -13,6 +13,7 @@
 - [Mandatory Tasks](#Mandatory-Tasks)
 - [Specifiers](#Specifiers)
 - [Installation](#Installation)
+- [File description](#File-description)
 - [Examples and Tests](#Examples-and-Tests)
 - [Authors](#Authors)
 
@@ -76,7 +77,7 @@ $ gcc -Wall -Werror -Wextra -pedantic -std=gnu89 -Wno-format *.c
 ```
 This will create a compilation file. You can run this file in your terminal by using this command :
 ```bash
-$ ./
+$ ./a.out
 ```
 
 Here's an example of how does the parameters work in our `_printf()` function:
@@ -132,6 +133,16 @@ git clone https://github.com/valak74200/holbertonschool-printf.git
 ```bash
 gcc -Wall -Werror -Wextra -pedantic -std=gnu89 -Wno-format *.c -o 0-printf
 ```
+## File description
+
+- _printf() : Contains the function _printf().
+- man_3_printf : Manual page for _printf() function.
+- main.h : Contains all headers, prototypes and structure declaration.
+- print_char.c : Contain the function for printing a character.
+- print_int.c : Contain the function for printing an integer.
+- print_pc.c : Contain the function for printing an '%'.
+- print_string.c : Contain the function for printing a string.
+- specifiers.c : Contain the functions appropriate to print an argument (%c, %s, %d, %i, %%). 
 
 ## Examples and Tests
 
