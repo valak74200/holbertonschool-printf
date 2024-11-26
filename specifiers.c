@@ -20,13 +20,13 @@ int (*specifiers(const char *format))(va_list)
  * Une variable i est déclarée et initialisée à 0.
  * Cette variable sera utilisée comme index pour l'itération.
  */
-	print_t array[6] = {
+	print_t array[7] = {
 		{'c', print_char},
 		{'s', print_string},
 		{'d', print_int},
 		{'i', print_int},
 		{'%', print_pc},
-		{'\0', NULL}
+		{NULL, NULL}
 	};
 
 /**
@@ -39,7 +39,7 @@ int (*specifiers(const char *format))(va_list)
  * qui agit comme une valeur sentinelle indiquant la fin du tableau.
  */
 
-	for (int i = 0; array[i].sp != NULL; i++)
+	for (i = 0; array[i].sp != NULL; i++)
 {
 
 /**
@@ -48,7 +48,7 @@ int (*specifiers(const char *format))(va_list)
  * (spécificateur) est NULL, ce qui indique la fin du tableau.
  */
 
-	if (array[i].sp == *format)
+	if (*(array[i].sp) == *format)
 		{
 
 
