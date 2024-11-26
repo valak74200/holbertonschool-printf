@@ -26,7 +26,6 @@ int (*specifiers(const char *format))(va_list)
 		{'d', print_int},
 		{'i', print_int},
 		{'%', print_percent},
-		{'b', print_binary},
 		{'\0', NULL}
 	};
 
