@@ -10,10 +10,9 @@
 - [Man Page](#Man-Page)
 - [Flowchart](#Flowchart)
 - [Usage](#Usage)
-- [Compilation](#Compilation)
+- [Installation & Compilation](#Installation-&-Compilation)
 - [Mandatory Tasks](#Mandatory-Tasks)
 - [Specifiers](#Specifiers)
-- [Installation](#Installation)
 - [File description](#File-description)
 - [Examples and Tests](#Examples-and-Tests)
 - [Authors](#Authors)
@@ -71,13 +70,19 @@ int main()
 }
 ```
 
-## Compilation
+## Installation & Compilation
 
-To compile the program, this command has to be executed :
+1. Clone this repository on your local machine :
+
+```bash
+git clone https://github.com/valak74200/holbertonschool-printf.git
+```
+
+2. To compile the program, this command has to be executed :
 ```bash
 $ gcc -Wall -Werror -Wextra -pedantic -std=gnu89 -Wno-format *.c
 ```
-This will create a compilation file. You can run this file in your terminal by using this command :
+3. This will create a compilation file. You can run this file in your terminal by using this command :
 ```bash
 $ ./a.out
 ```
@@ -122,19 +127,6 @@ Cohort: 25
 -   %d : prints a decimal number 
 -	%i : signed integer number
 
-## Installation
-
-1. Clone this repository on your local machine :
-
-```bash
-git clone https://github.com/valak74200/holbertonschool-printf.git
-```
-
-2. Compile the source files with this command :
-
-```bash
-gcc -Wall -Werror -Wextra -pedantic -std=gnu89 -Wno-format *.c -o 0-printf
-```
 ## File description
 
 - _printf() : Contains the function _printf().
